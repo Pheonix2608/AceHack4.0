@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AceLab</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="light">
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch"/>
+    <label for="theme-switch" class="toggle-label"></label>
+  </div>
+
+  <header>
+    <div class="logo">AceLab</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for Products, Brands and More">
+    </div>
+    <div class="user-actions">
+      <div class="login">Login</div>
+      <div class="cart">Cart</div>
+      <div class="seller">Become a Seller</div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Kilos</a></li>
+      <li><a href="#">Mobiles</a></li>
+      <li><a href="#">Fashion</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Home & Furniture</a></li>
+      <li><a href="#">Appliances</a></li>
+      <li><a href="#">Flight Bookings</a></li>
+      <li><a href="#">Beauty, Toys & More</a></li>
+      <li><a href="#">Two Wheelers</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Office Chairs</h2>
+        <p>From ₹ 2,999</p>
+        <p>Green Soul, Cell Bell & more</p>
+      </div>
+      <img src="img/office_chair.jpg" alt="Office Chair">
+    </section>
+
+    <section class="carousel-section">
+      <h2>Top Deals</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+          <!-- Updated image sources -->
+          <div class="carousel-item" data-info="Amazing performance, 8GB RAM, 128GB storage">
+            <img src="img/phone_1.jpg" alt="Product 1"/>
+            <div class="bubble">Product 1</div>
+          </div>
+          <div class="carousel-item" data-info="Full HD Display, 15.6-inch screen, i5 Processor">
+            <img src="img/laptop_2.jpg" alt="Product 2"/>
+            <div class="bubble">Product 2</div>
+          </div>
+          <div class="carousel-item" data-info="Smart LED TV, 43 inch, 4K UHD">
+            <img src="img/tv_3.jpg" alt="Product 3"/>
+            <div class="bubble">Product 3</div>
+          </div>
+          <div class="carousel-item" data-info="Washing Machine, Top Load, 6.5 kg">
+            <img src="img/washer_4.jpg" alt="Product 4"/>
+            <div class="bubble">Product 4</div>
+          </div>
+          <div class="carousel-item" data-info="Wireless Earbuds, 24hr Battery, IPX5">
+            <img src="img/earbuds_5.jpg" alt="Product 5"/>
+            <div class="bubble">Product 5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Best of Electronics</h2>
+      <div class="product-grid">
+        <!-- Updated image sources -->
+        <div class="product-item" data-info="Truewireless Headphones, 20hr Battery, Noise Cancel">
+          <img src="img/headphones.jpg" alt="Best Headphones">
+          <h3>Best Headphones</h3>
+          <p>Grab Now</p>
+          <div class="bubble">Product Info</div>
+        </div>
+        <div class="product-item" data-info="Bluetooth Speaker, Waterproof, 12hr Playtime">
+          <img src="img/speaker.jpg" alt="Bluetooth Speaker">
+          <h3>Wireless Speaker</h3>
+          <p>Only ₹1,499</p>
+          <div class="bubble">Product Info</div>
+        </div>
+        <div class="product-item" data-info="Portable Charger, 10000mAh, Fast Charging">
+          <img src="img/powerbank.jpg" alt="Powerbank">
+          <h3>Power Bank</h3>
+          <p>Flat 40% Off</p>
+          <div class="bubble">Product Info</div>
+        </div>
+      </div>
+    </section>
+    <!-- Chatbot Widget -->
+<div class="chatbot-container" id="chatbot">
+  <div class="chatbot-toggle" onclick="toggleChatbot()">
+    💬
+  </div>
+  <div class="chatbot-box" id="chatbox">
+    <div class="chatbot-header">AceLab Assistant</div>
+    <div class="chatbot-messages" id="chat-messages">
+      <div class="bot-msg">Hi there! How can I help you today?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKey(event)">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+</div>
+
+
+    <aside class="advertisement">
+      <img src="img/air_india_ad.jpg" alt="Air India Flights">
+      <h3>Air India Flights</h3>
+      <p>From ₹ 1,299</p>
+      <p>COUPON: FLYFK</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AceLab. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
