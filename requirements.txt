@@ -3,3 +3,5 @@ transformers
 safetensors
 tkinter
 pyyaml
+nktk
+DialoGPT-small
