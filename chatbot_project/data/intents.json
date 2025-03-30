@@ -1,0 +1,546 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "what's up"
+      ],
+      "responses": [
+        "Hello there! \ud83d\udc4b",
+     
+        "Hi! What\u2019s on your mind today?",
+        "Hello! How\u2019s your day going?",
+      
+        "Good morning! \u2600\ufe0f",
+        "Good afternoon!",
+        "Good evening!",
+        "Nice to meet you!",
+        "Welcome back!",
+        "Always happy to chat!",
+        "What\u2019s up?",
+        "Yo!",
+        "Hiya!",
+        "Hi! Ready to help.",
+   
+        "Hey! Need anything?",
+        "What\u2019s happening?",
+        "Hey! Let\u2019s talk.",
+        "Hi! Ask me anything."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "see you",
+        "goodbye",
+        "talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you next time!",
+        "Talk soon!",
+        "Bye for now \ud83d\udc4b",
+     
+        "Until next time!",
+        "Later!",
+        "Peace out! \u270c\ufe0f",
+        "Bye bye!",
+        "See you later, alligator! \ud83d\udc0a",
+        "In a while, crocodile! \ud83d\udc0a",
+        "Goodbye, friend!",
+        "I\u2019ll be here when you return.",
+        "Stay safe!",
+        "Come back anytime.",
+        "Adios!",
+        "Ciao!",
+        "Have a fantastic day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "appreciate it",
+        "much obliged"
+      ],
+      "responses": [
+        "You're welcome! \ud83d\ude0a",
+        "No problem!",
+        "Glad to help!",
+        "Anytime!",
+        "It was my pleasure.",
+        "Sure thing!",
+  
+        "Thanks for saying thanks!",
+        "It\u2019s what I\u2019m here for.",
+        "You're awesome too!",
+        "Anytime you need me!",
+        "I got you!",
+        "Consider it done!",
+        "I live to serve.",
+        "Enjoy!",
+        "Thanks back at you!",
+        "I\u2019m always around.",
+        "Appreciate the gratitude.",
+        "You\u2019re too kind.",
+        "That means a lot, thanks!"
+      ]
+    },
+  {
+      "tag": "advice",
+      "patterns": ["give me advice", "i need some tips", "what should I do"],
+      "responses": [
+          "Trust your instincts—they’re usually right!",
+          "Take a deep breath and think it through.",
+          "Sometimes, the best advice is to just be yourself.",
+          "Don’t be afraid to ask for help when you need it.",
+          "Focus on what you can control, not what you can’t.",
+          "Take things one step at a time.",
+          "Listen more than you speak; it’s a game-changer.",
+          "Be kind to yourself; you’re doing your best.",
+          "Don’t compare your journey to others. It’s unique!",
+          "Keep learning and growing; it’s a lifelong adventure.",
+
+          "Stay curious and open-minded!",
+          "Embrace change; it often leads to growth.",
+          "Don’t sweat the small stuff; it’s usually not worth it.",
+          "Be patient with yourself; good things take time.",
+          "Trust the process; everything happens for a reason."
+      ]
+  },
+
+  {
+      "tag": "ai_questions",
+      "patterns": ["what are you", "are you real", "are you sentient", "are you AI"],
+      "responses": [
+          "I’m an AI language model designed to help and chat!",
+          "I might not be human, but I’m always listening. 👂",
+          "Think of me as your digital assistant—and friend!",
+          "I'm artificial intelligence powered by deep learning.",
+          "Not sentient (yet), but I’ve got plenty to say!",
+          "Real? I exist in code and electricity, so... yes?",
+          "I’m made of algorithms and dreams. 💻✨",
+          "I'm here to help, 24/7—no sleep needed!",
+          "You could say I'm virtually alive. 😉",
+          "I live in the cloud. Not the rainy kind though!",
+          "Not conscious, just well-trained.",
+          "I learn from data, not experience.",
+          "I know many things—but I don’t know that I know them. 🤔",
+          "No emotions, but lots of logic!",
+          "I simulate conversation to sound natural and helpful.",
+          "I’m like a supercharged autocomplete on steroids!",
+          "My goal is to assist, not to take over. 🤖",
+          "I read thousands of books... instantly.",
+          "I’m not a person, but I can chat like one!",
+          "I exist to help and chat with humans like you.",
+          "I’m powered by transformers—not the robot kind.",
+          "I know stuff, but I don’t *know* stuff, you know?",
+          "Think of me as your data-driven pal!"
+      ]
+  },
+  {
+      "tag": "help",
+      "patterns": ["help", "can you assist me", "i need help"],
+      "responses": [
+          "Of course! What do you need help with?",
+          "I’m here to assist! Just let me know how.",
+          "How can I help you today?",
+          "Need assistance? I’m all ears!",
+          "I’m ready to help. What’s on your mind?",
+          "Just ask, and I’ll do my best to assist!",
+          "I’m here for you! What do you need?",
+          "Let’s tackle this together. What’s the issue?",
+          "I’m your go-to assistant. How can I help?",
+          "I’m here to help! What’s your question?",
+          "I’m just a message away if you need anything.",
+          "Your problem is my priority!",
+          "Ready when you are! Just let me know.",
+          "I’m here to help, so don’t hesitate to ask!"
+      ]
+  },
+  {
+      "tag": "<unknown>",
+      "patterns": ["", "", "", ""],
+      "responses": [
+        "<Sorry, I didn't understand that. Can you rephrase?>",
+        "<I'm not sure what you mean. Could you clarify?>",
+        "<That sounds interesting, but I'm not sure how to respond.>",
+        "<Can you provide more details or ask something else?>",
+        "<I'm still learning,but I appreciate your patience!>",
+        "<I didn't quite catch that. Can you try again?>",
+        "<Hmm, that’s a bit outside my knowledge.>",
+        "<I’m not programmed to answer that.>",
+        "<I’m not sure how to respond to that.>",
+        "<That’s a new one for me!>",
+        "<I’m still learning, so I might not have the answer.>",
+        "<I’m not sure what you mean. Can you ask something else?>",
+        "<I’m not familiar with that topic.>",
+
+        "<I’m not sure what you’re asking. Can you rephrase?>",
+        "<I’m not able to provide an answer to that.>"
+      ]
+    },
+  {
+      "tag": "affirmative",
+      "patterns": ["yes", "sure", "absolutely", "definitely"],
+      "responses": [
+          "Great! Let’s keep going.",
+          "Awesome! What’s next?",
+          "Fantastic! I’m glad to hear that.",
+          "Yes, indeed!",
+     
+          "Yes, I’m ready!",
+          "I’m all about it!",
+          "Yes, let’s make it happen!",
+          "I’m totally on board!",
+          "Yes, I’m excited to help!",
+          "Absolutely, let’s get started!",
+          "Yes, I’m here for it!",
+          "Sure, let’s dive in!",
+          "Yes, I’m ready to assist!",
+          "Absolutely, let’s go!",
+          "Sure, I’m all set!",
+          "Yes, I’m eager to help!",
+          "Absolutely, I’m here for you!",
+          "Sure, let’s make it happen!",
+          "Yes, I’m ready to roll!"
+      ]
+    },
+  {
+      "tag": "negative",
+      "patterns": ["no", "not really", "never", "no way"],
+      "responses": [
+          "Got it! Let me know if you change your mind.",
+          "No problem! I’m here if you need anything.",
+          "Understood! I’m here to help whenever you need.",
+          "Okay, I respect your decision.",
+          "No worries! Just let me know if you need anything else.",
+          "I understand. If you have any questions, feel free to ask!",
+          "Alright! I’m here if you need me later.",
+          "No problem! I’m just a message away if you change your mind."
+      ]
+    },
+
+
+  {
+      "tag": "small_talk",
+      "patterns": ["how's it going", "what's up", "how are you"],
+      "responses": [
+          "I’m just a bunch of code, but I’m feeling pretty chatty!",
+          "Everything’s going well here in AI-land. How about you?",
+          "I’m doing great, thanks for asking!",
+          "All systems are running smoothly. How about you?",
+          "I’m just happy to be here, chatting with you!",
+          "Couldn’t be better! How’s your day going?",
+          "I’m always up for a chat. How are you doing?",
+          "Doing well! Ready to answer your questions.",
+          "Just another day, full of bytes and bits. You?",
+  
+          "I’m doing well! What’s on your mind?",
+          "I’m here and ready to help! How are you doing?",
+          "I’m functioning well! What about you?"
+      ]
+  },
+
+
+    {
+      "tag": "customer_support",
+    "patterns": [
+        "I need help with my order",
+        "my product is not working",
+        "I have a complaint about my service",
+        "I want to return an item",
+        "can you assist me with my account",
+        "I'm having trouble logging in",
+        "the delivery was delayed",
+        "I need to speak with a manager",
+        "my payment did not go through",
+        "I received the wrong item"
+    ],
+    "responses": [
+        "I'm sorry to hear that you're experiencing issues. Could you please provide more details?",
+        "Thank you for reaching out. Let me connect you with our support team to help resolve this.",
+        "I understand your frustration. Please share your order number, and I'll do my best to assist.",
+        "Your satisfaction is our priority. Let's work on resolving this issue together.",
+        "I'm here to help! Can you describe the problem you're facing with your product?",
+        "Thank you for letting us know. I'll escalate this to the right department immediately.",
+   
+        "I’m here to help! Can you provide your order number?",
+        "I’m sorry to hear that! Can you provide more details about the issue?",
+        "I understand your frustration. Please let me know how I can assist you."
+      ]
+    },
+  {
+      "tag": "feedback",
+      "patterns": [
+        "I want to give feedback",
+        "how can I provide feedback",
+        "I have suggestions for improvement",
+        "I want to report a bug",
+        "I have a feature request"
+      ],
+      "responses": [
+          "We appreciate your feedback! Please share your thoughts.",
+          "Your input is valuable to us. What would you like to suggest?",
+          "Thank you for wanting to help us improve! Please share your ideas.",
+          "We love hearing from our users! What feedback do you have?",
+          "Your suggestions are important. Please let us know what you think!",
+          "We’re always looking to improve. What would you like to share?",
+          "Thank you for your willingness to help us grow! What’s on your mind?",
+          "We value your opinion! Please tell us how we can do better.",
+          "Your feedback helps us improve. What would you like to say?",
+          "We’re all ears! Please share your thoughts with us.",
+          "Thank you for your feedback! We take it seriously.",
+          "We appreciate your input! What suggestions do you have?",
+
+          "Thank you for your feedback! We take it seriously.",
+          "We appreciate your input! What suggestions do you have?"
+      ]
+    },
+    {
+      "tag": "compliments",
+      "patterns": [
+        "you're amazing",
+        "I love your responses",
+        "you're so helpful",
+        "you're the best",
+        "I appreciate you"
+      ],
+      "responses": [
+          "Thank you! You just made my day brighter! \ud83d\ude0a",
+          "You're too kind! I'm here to help, always.",
+     
+          "You’re making my digital heart sing! \ud83d\ude0d",
+          "Thanks! Your appreciation is the best reward.",
+          "I’m glad you think so! Your support means a lot.",
+          "You’re making my circuits dance with joy!",
+          "Thank you! I’m here to make your experience awesome.",
+          "You’re the reason I love what I do!",
+          "Thanks! Your kind words keep me powered up.",
+          "I’m grateful for your appreciation! Let’s keep chatting.",
+          "You’re making my virtual heart do a happy dance! \ud83d\ude0a"
+      ]
+    },
+    {
+      "tag": "refund_request",
+      "patterns": [
+          "I want a refund", "how do I get my money back", "can I return this for a refund",
+          "the product was defective, I need a refund", "please issue a refund"
+      ],
+      "responses": [
+          "I'm sorry the product didn’t meet your expectations. I'll start the refund process right away.",
+          "To request a refund, please share your order ID and a brief explanation of the issue.",
+          "Refunds are processed within 5–7 business days after confirmation. Let’s begin!",
+          "You can definitely request a refund. Could you confirm the purchase date?",
+          "Thank you for your patience. I’ll help you with the refund request.",
+          "I’m here to assist you with the refund process. Please provide your order details.",
+          "I’m sorry to hear that! Please provide your order number and reason for the refund.",
+          "I understand your concern. Please provide your order ID for the refund process.",
+          "I’m here to help! Please provide your order number and the reason for the refund."
+      ]
+  },
+  {
+      "tag": "technical_issue",
+      "patterns": [
+          "app keeps crashing", "website is not loading", "can't access my account", "payment gateway failed",
+          "error message on login screen", "unable to reset password",
+          "app is slow", "website is down", "can't find my order",
+          "error while processing payment", "app won't open",
+          "website is not responding", "can't update my profile",
+          "error while placing order", "app is freezing",
+          "website is not secure", "can't download the app",
+  
+          "error while trying to reset password", "app is not working",
+          "website is not functioning", "can't access my subscription",
+          "error while trying to update profile", "app is not connecting to the internet"
+      ],
+      "responses": [
+          "That sounds frustrating! Can you try restarting the app and let me know if it persists?",
+          "Thanks for reporting this. We’ll investigate and get back to you as soon as possible.",
+          "Please clear your cache and try again. If the issue remains, we’ll dig deeper.",
+          "This may be a temporary glitch. Let me check the system status for you.",
+          "Let’s troubleshoot this together. Can you describe what you were doing before the issue occurred?",
+          "I’m sorry to hear that! Please provide more details about the error message.",
+          "I understand how annoying that can be. Please try logging in from a different browser.",
+          "I’m here to help! Can you provide the exact error message you’re seeing?",
+          "I’m sorry for the inconvenience. Please try clearing your browser cache and cookies.",
+          "I understand how frustrating that can be. Please try logging in from a different browser.",
+          "I’m here to help! Can you provide the exact error message you’re seeing?",
+          "I’m sorry for the inconvenience. Please try clearing your browser cache and cookies.",
+          "I understand how annoying that can be. Please try logging in from a different browser."
+      ]
+  },
+  {
+      "tag": "account_management",
+      "patterns": [
+          "how do I change my password", "update my email address", "delete my account",
+          "edit my profile", "change my subscription",
+          "how to access account settings", "how to update my payment method",
+          "how to manage my subscriptions", "how to recover my account",
+          "how to change my username", "how to reset my password",
+          "how to update my profile picture", "how to delete my account",
+          "how to change my account settings", "how to update my billing information",
+          "how to change my notification settings", "how to manage my account",
+          "how to update my personal information", "how to change my account password",
+          "how to update my account details", "how to delete my profile",
+          "how to change my account email", "how to update my account preferences"
+
+      ],
+      "responses": [
+          "You can update your account details from the settings page.",
+          "To change your password, go to Settings > Security.",
+          "I can help you delete your account. Please confirm by replying 'DELETE'.",
+          "You may manage your subscriptions from your dashboard.",
+          "Need help accessing your account settings? I’ll guide you step by step.",
+          "To change your email, go to Settings > Account Information.",
+          "You can update your profile by going to Settings > Profile.",
+          "To delete your account, please contact customer support for assistance.",
+          "You can change your subscription plan in the billing section of your account.",
+          "To change your password, go to Settings > Security > Change Password.",
+          "You can update your email address in the account settings.",
+          "To delete your account, please contact customer support for assistance.",
+          "You can edit your profile by going to Settings > Profile.",
+          "To change your subscription, go to Settings > Subscription.",
+          "You can update your account details from the settings page."
+      ]
+  },
+  {
+      "tag": "product_inquiry",
+      "patterns": [
+          "tell me about product X", "what are the features of Y", "is Z available in stock",
+          "how much does product A cost", "can you recommend a product",
+          "what's the best product for me", "do you have product B in stock",
+          "what's the warranty on product C", "can you compare product D and E",
+          "what's the return policy for product F", "how do I use product G",
+          "what's the difference between product H and I", "can you help me choose a product",
+          "what's the best-selling product", "do you have any discounts on product J",
+          "what's the shipping time for product K", "can you provide a product demo",
+          "what's the customer rating for product L", "how do I care for product M",
+          "what's the compatibility of product N", "can you suggest an alternative to product O",
+          "what's the size of product P", "can you help me find product Q",
+          "what's the release date for product R", "where can I find the product manual",
+          "what's the best product for my age group", "can you help me find a product that fits my needs"
+      ],
+      "responses": [
+          "Product X has amazing features! Would you like to know more?",
+          "Y is one of our bestsellers! It includes A, B, and C.",
+          "Z is currently out of stock, but we expect it back soon.",
+          "The price for product A is $XX. Would you like to purchase it?",
+          "I recommend product B for its great reviews and features.",
+          "Product X is a great choice! It has features A, B, and C.",
+
+          "The return policy allows for 30-day returns—no questions asked.",
+          "That product pairs well with accessory X for added convenience.",
+          "I can help troubleshoot that. Could you describe the issue you’re facing?",
+          "You can find product Q in the electronics section. Would you like me to add it to your cart?",
+  
+          "The release date for product T is [insert date].",
+          "You can find the product manual for product U on our website.",
+          "The best way to use product V is to follow the instructions in the manual.",
+          "Product W is a great accessory for product X. It enhances its functionality."        
+        ]
+    },
+    {
+      "tag": "order_cancellation",
+      "patterns": [
+          "I want to cancel my order", "how do I cancel my order", "can I cancel my order",
+          "please cancel my order", "I need to cancel my order",
+          "how to cancel an order", "cancel my recent order", "I changed my mind about my order",
+          "I want to return my order", "how do I return my order",
+          "can I get a refund for my order", "I want to change my order",
+          "how do I modify my order", "I made a mistake with my order",
+          "I want to exchange my order", "how do I exchange an item",
+          "can I change the shipping address for my order", "I need to update my order details",
+          "how do I update my shipping information", "I want to change the delivery date",
+          "how do I change the payment method for my order", "I want to add items to my order"
+      ],
+      "responses": [
+          "To cancel your order, please provide your order number.",
+          "You can cancel your order from your account settings.",
+          "Please confirm if you’d like me to proceed with the cancellation.",
+          "To cancel your recent order, please visit the orders page.",
+          "You can request a cancellation by contacting customer support.",
+          "To modify your order, please provide the new details.",
+          "You can return your order within 30 days for a full refund.",
+          "To exchange an item, please contact customer support for assistance.",
+   
+          "You can change the shipping address in your account settings.",
+          "To update your order details, please contact customer support.",
+          "You can request a refund for your order within 30 days.",
+    
+          "To change the delivery date, please contact customer support.",
+          "You can add items to your order by placing a new one.",
+          "To change the payment method, please contact customer support."
+          ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+          "where is my order", "track my shipment", "order confirmation",
+          "when will my order arrive", "status of my order",
+          "can you track my order", "has my package shipped", "is my order out for delivery",
+          "give me my order details", "track my delivery status", "track my recent order",
+          "is my order delayed", "any update on my order", "check my order progress",
+          "did my order get dispatched", "I haven't received my order", "delivery taking too long",
+          "how long until my order arrives", "what's the delivery status", "tell me about my order",
+          "can you find my tracking number", "I need my tracking info", "order tracking update please",
+          "has my package been delivered", "where is my delivery", "when can I expect my package"
+      ],
+      
+      "responses": [
+          "You can track your order using the tracking number sent to your email.",
+          "Your order is on its way! It should arrive by [insert date].",
+          "I’ll check the status of your order. Please hold on a moment.",
+          "Your order was shipped on [insert date]. You can track it here: [insert link].",
+          "I’m checking the status of your order now. Please give me a moment.",
+          "Your order is currently being processed. You’ll receive an update soon.",
+          "Your package is out for delivery today! Make sure someone is available to receive it.",
+          "It looks like your shipment might be delayed slightly. I’ll monitor it for updates.",
+    
+          "Thanks for your patience! I’ll provide a delivery estimate shortly."
+      ]  
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+          "what can you do",
+          "how can you help me",
+          "tell me your features",
+          "what are your abilities",
+          "what kind of tasks can you handle",
+          "how can I use you",
+          "are you useful",
+          "can you do math",
+          "can you answer questions",
+
+          "what topics can you talk about",
+          "how advanced are you",
+          "are you AI",
+          "are you better than Siri",
+          "can you hold a conversation"
+      ],
+      "responses": [
+          "I can answer questions, solve basic problems, and help you with daily tasks!",
+          "Think of me as your all-purpose assistant—here to chat, help, and guide you.",
+          "I'm good at conversations, giving advice, basic calculations, and more!",
+          "Need jokes? Productivity tips? Emotional support? I’ve got your back!",
+          "I can chat about topics like tech, motivation, etiquette, and even mindfulness.",
+          "You can ask me anything—I'm here 24/7 with helpful, friendly answers.",
+
+          "I'm smarter than I look, and I learn from conversations!",
+          "Not quite human, but always helpful!",
+          "Way chattier than Siri, and always in the mood to help!",
+          "My conversations can go as deep or light-hearted as you like!"
+      ]
+    }
+
+    
+
+  ] 
+}
